@@ -13,6 +13,6 @@
 *.iml
 *.idea
 
-**/main2/
-/main2/
-*/main2/*
+**/main/
+/main/
+*/main/*
