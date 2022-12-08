@@ -60,4 +60,5 @@ public class SearchResultPage {
         return book.findElement(By.cssSelector("div.item-info > h3 > a")).getText();
     }
 
+
 }
