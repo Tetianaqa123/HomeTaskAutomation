@@ -1,16 +1,11 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
+import com.cucumber.junit.driver.DriverManager;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePage {
+public class HomePage extends BasePage {
 
-    final WebDriver driver;
-
-    public HomePage(WebDriver driver) {
-        this.driver = driver;
-    }
 
     // On the Home page locate logo, Sign in Register, icon, search field, navigation menu, banner
 
@@ -42,8 +37,10 @@ public class HomePage {
     @FindBy(className="btn-yes")
     WebElement acceptCookiesBtn;
 
+    String URL = "https://www.bookdepository.com/";
+
     public void OpenHomePage(){
-        driver.get("https://www.bookdepository.com/");
+        DriverManager.getDriver().get(URL);
     }
 
     //Method that performs search action using the web elements

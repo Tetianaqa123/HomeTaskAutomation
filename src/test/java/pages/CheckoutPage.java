@@ -4,14 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
-public class CheckoutPage {
-
-    final WebDriver driver;
-
-    public CheckoutPage(WebDriver driver) {
-
-        this.driver = driver;
-    }
+public class CheckoutPage extends BasePage {
 
     //Locating item
     @FindBy(css="div.mini-basket > div.wrapper > div:nth-child(2) > dl > dd")

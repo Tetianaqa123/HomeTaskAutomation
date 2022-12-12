@@ -4,14 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
-public class BasketPage {
-
-    final WebDriver driver;
-
-    public BasketPage(WebDriver driver) {
-
-        this.driver = driver;
-    }
+public class BasketPage extends BasePage {
 
     //Locating item
     @FindBy(css="dl.total > dd")

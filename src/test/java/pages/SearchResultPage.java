@@ -7,14 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class SearchResultPage {
-
-    final WebDriver driver;
-
-    public SearchResultPage(WebDriver driver) {
-        this.driver = driver;
-    }
-
+public class SearchResultPage extends BasePage {
 
     //Locating the book item
     @FindBy(className="book-item")

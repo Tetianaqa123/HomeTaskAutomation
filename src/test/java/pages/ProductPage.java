@@ -5,15 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class ProductPage {
-
-    final WebDriver driver;
-
-    public ProductPage(WebDriver driver) {
-
-        this.driver = driver;
-    }
-
+public class ProductPage extends BasePage {
 
     //Locating the book title item
     @FindBy(xpath="//h1[contains(@itemprop, 'name')]")
